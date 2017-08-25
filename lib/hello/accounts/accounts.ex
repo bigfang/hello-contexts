@@ -6,8 +6,7 @@ defmodule Hello.Accounts do
   import Ecto.Query, warn: false
   alias Hello.Repo
 
-  alias Hello.Accounts.User
-  alias Hello.Accounts.Credential
+  alias Hello.Accounts.{User, Credential}
 
 
   def authenticate_by_email_password(email, _password) do
@@ -125,7 +124,6 @@ defmodule Hello.Accounts do
     User.changeset(user, %{})
   end
 
-  alias Hello.Accounts.Credential
 
   @doc """
   Returns the list of credentials.

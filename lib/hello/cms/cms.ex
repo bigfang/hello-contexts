@@ -119,7 +119,6 @@ defmodule Hello.CMS do
     put_in(page.views, views)
   end
 
-  alias Hello.CMS.Author
 
   @doc """
   Returns the list of authors.
